@@ -1,0 +1,384 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MeditationActivity"
+    android:background="@drawable/main_bg_5"
+    android:paddingTop="10dp"
+    >
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/section_1"
+        android:layout_marginVertical="10dp"
+        android:layout_marginHorizontal="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        app:cardCornerRadius="12dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <TextView
+                android:id="@+id/med_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="@font/andika"
+                android:text="Choose Mediatation,"
+                android:textColor="#22201E"
+                android:textSize="22sp" />
+
+            <TextView
+                android:id="@+id/med_msg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/med_title"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="@font/andika"
+                android:text="'Start Your Day Mindfully: Embrace Serenity with Morning Meditation.'"
+                android:textColor="#404745"
+                android:textSize="12sp" />
+
+            <ImageView
+                android:layout_marginVertical="8dp"
+                android:id="@+id/imageView"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentEnd="true"
+                app:srcCompat="@drawable/s_logo_1"
+                 />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/section_2"
+        android:layout_above="@id/section_3"
+        android:layout_marginVertical="10dp"
+        android:layout_marginHorizontal="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_below="@id/section_1"
+        android:padding="20dp"
+        app:cardCornerRadius="12dp"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+           >
+
+        <RelativeLayout
+            android:background="#FFFFFF"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            >
+
+            <LinearLayout
+                android:id="@+id/meditation_row_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_marginVertical="20dp"
+                android:layout_marginHorizontal="20dp"
+                app:cardCornerRadius="8dp"
+                android:id="@+id/mindfullness_meditation_btn"
+                >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+
+               <ImageView
+                   android:id="@+id/card_img_1"
+                   android:layout_width="100dp"
+                   android:layout_height="100dp"
+                   android:layout_centerHorizontal="true"
+                   android:layout_centerVertical="true"
+                   android:src="@drawable/mindfullness_meditation_2"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Mindfullness Meditation"
+                    android:textSize="10sp"
+                    android:layout_below="@id/card_img_1"
+                    android:layout_centerHorizontal="true"
+                    android:textAlignment="center" />
+                </RelativeLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_marginVertical="20dp"
+                    android:layout_marginHorizontal="20dp"
+                    app:cardCornerRadius="8dp"
+                    android:id="@+id/transcedental_meditation_btn"
+
+                    >
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+
+                        <ImageView
+                            android:id="@+id/card_img_2"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:src="@drawable/transcedental_meditation_2"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Transcedental Meditation"
+                            android:textSize="10sp"
+                            android:layout_below="@id/card_img_2"
+                            android:layout_centerHorizontal="true"
+                            android:textAlignment="center" />
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/meditation_row_2"
+                android:layout_below="@+id/meditation_row_1"
+                >
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_marginVertical="20dp"
+                    android:layout_marginHorizontal="20dp"
+                    app:cardCornerRadius="8dp"
+                    android:id="@+id/chakra_meditation_btn"
+
+                    >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+
+                    <ImageView
+                        android:id="@+id/card_img_3"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/chakra_meditation_4"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Chakra Meditation"
+                        android:textSize="10sp"
+                        android:layout_below="@id/card_img_3"
+                        android:layout_centerHorizontal="true"
+                        android:textAlignment="center" />
+                </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_marginVertical="20dp"
+                    android:layout_marginHorizontal="20dp"
+                    app:cardCornerRadius="8dp"
+                    android:id="@+id/breathing_meditation_btn"
+
+                    >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+
+                    <ImageView
+                        android:id="@+id/card_img_4"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/breathing_meditation_2"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Breathing Meditation"
+                        android:textSize="10sp"
+                        android:layout_below="@id/card_img_4"
+                        android:layout_centerHorizontal="true"
+                        android:textAlignment="center" />
+                </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/meditation_row_3"
+                android:layout_below="@+id/meditation_row_2"
+                >
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_marginVertical="20dp"
+                    android:layout_marginHorizontal="20dp"
+                    app:cardCornerRadius="8dp"
+                    android:id="@+id/zen_meditation_btn"
+
+                    >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+
+                    <ImageView
+                        android:id="@+id/card_img_5"
+                        android:layout_width="90dp"
+                        android:layout_height="100dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/zen_meditation_6"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Zen Meditation"
+                        android:textSize="10sp"
+                        android:layout_below="@id/card_img_5"
+                        android:layout_centerHorizontal="true"
+                        android:textAlignment="center" />
+                </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_marginVertical="20dp"
+                    android:layout_marginHorizontal="20dp"
+                    app:cardCornerRadius="8dp"
+                    android:id="@+id/productivity_meditation_btn"
+
+                    >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+
+                    <ImageView
+                        android:id="@+id/card_img_6"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/study_sounds_2"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Productvity Boost"
+                        android:textSize="10sp"
+                        android:layout_below="@id/card_img_6"
+                        android:layout_centerHorizontal="true"
+                        android:textAlignment="center" />
+                </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/section_3"
+
+        android:layout_marginTop="10dp"
+        android:layout_marginHorizontal="0dp"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:padding="20dp"
+        app:cardCornerRadius="0dp"
+        android:layout_alignParentBottom="true">
+
+        <LinearLayout
+            android:paddingVertical="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+
+            >
+
+
+            <ImageView
+                android:id="@+id/home_btn"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/home_inactive"
+                android:layout_weight="1"/>
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                app:srcCompat="@drawable/meditation_3"
+                android:layout_weight="1"/>
+
+            <ImageView
+                android:id="@+id/notes_btn"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                app:srcCompat="@drawable/note_inactive"
+                android:layout_weight="1"/>
+
+            <ImageView
+                android:id="@+id/sleep_btn"
+
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                app:srcCompat="@drawable/sleep_inactive"
+                android:layout_weight="1"/>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+
+
+</RelativeLayout>

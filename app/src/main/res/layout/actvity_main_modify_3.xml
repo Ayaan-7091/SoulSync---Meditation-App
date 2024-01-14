@@ -1,0 +1,377 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/main_bg_12"
+    android:paddingTop="10dp"
+    >
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/section_1"
+        android:layout_marginVertical="10dp"
+        android:layout_marginHorizontal="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:padding="20dp"
+        app:cardCornerRadius="12dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+            <TextView
+                android:id="@+id/greeting_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="@font/andika"
+                android:text="Goodevening,"
+                android:textColor="#383B3A"
+                android:textSize="22sp"
+                android:textStyle="bold"/>
+
+            <ImageView
+                android:id="@+id/greet_img"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginRight="20dp"
+                android:background="@color/white"
+                app:srcCompat="@drawable/evening"
+                android:layout_centerVertical="true" />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+
+
+
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/section_1"
+        android:id="@+id/section_1_2"
+        android:padding="10dp"
+        app:cardCornerRadius="12dp"
+        android:layout_marginVertical="30dp"
+        android:layout_marginHorizontal="20dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="20dp"
+            android:background="#FFFFFF">
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="User"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.163"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView6" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="AI"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.846"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView4" />
+
+            <ImageView
+
+                android:id="@+id/imageView2"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="16dp"
+                android:src="@drawable/s_logo_2"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.498"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="1.0" />
+
+            <ImageView
+                android:id="@+id/imageView6"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginTop="24dp"
+                android:src="@drawable/user_4"
+
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.108"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginTop="24dp"
+                android:src="@drawable/ai_4"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.924"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/section_2"
+        android:layout_above="@id/section_3"
+        android:layout_marginVertical="10dp"
+        android:layout_marginHorizontal="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_below="@id/section_1_2"
+        android:padding="20dp"
+        app:cardCornerRadius="12dp"
+        >
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="19dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="8dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/quotes_title"
+                        android:text="Start your day with some Positive Quotes"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:padding="10dp"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/andika"
+                        android:textSize="18sp"/>
+
+                </LinearLayout><LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="8dp"
+                >
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="12dp"
+                    android:layout_margin="1dp"
+                    android:layout_marginVertical="5dp"
+                    android:backgroundTint="#FF9B50"
+
+                    >
+                    <TextView
+                        android:id="@+id/quote_1"
+                        android:layout_marginVertical="10dp"
+                        android:padding="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="The best way to capture moments is to pay attention. This is how we cultivate mindfulness. - Jon Kabat-Zinn"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/white"
+                        />
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout><LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="8dp">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="12dp"
+                    android:layout_margin="1dp"
+                    android:layout_marginVertical="5dp"
+                    android:backgroundTint="#FFBB5C"
+
+                    >
+                    <TextView
+                        android:id="@+id/quote_2"
+                        android:textColor="@color/white"
+                        android:layout_marginVertical="10dp"
+                        android:padding="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Within you there is a stillness and a sanctuary to which you can retreat at any time and be yourself - Hermann Hesse"
+                        android:textSize="16sp"
+                        android:textStyle="bold"/>
+                    />
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout><LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="8dp">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="12dp"
+                    android:layout_margin="1dp"
+                    android:layout_marginVertical="5dp"
+                    android:backgroundTint="#FF9B50"
+
+
+                    >
+                    <TextView
+                        android:id="@+id/quote_3"
+                        android:layout_marginVertical="10dp"
+                        android:padding="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Within you there is a stillness and a sanctuary to which you can retreat at any time and be yourself - Hermann Hesse"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/white"/>
+                    />
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout><LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="8dp"
+
+                >
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="12dp"
+                    android:layout_margin="1dp"
+                    android:layout_marginVertical="5dp"
+                    android:backgroundTint="#FFBB5C"
+                    >
+                    <TextView
+                        android:id="@+id/quote_4"
+                        android:layout_marginVertical="10dp"
+                        android:padding="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Within you there is a stillness and a sanctuary to which you can retreat at any time and be yourself - Hermann Hesse"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/white"
+                        />
+                    />
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout><LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="8dp">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="12dp"
+                    android:layout_margin="1dp"
+                    android:layout_marginVertical="5dp"
+                    android:backgroundTint="#FF9B50"
+                    >
+                    <TextView
+                        android:id="@+id/quote_5"
+                        android:layout_marginVertical="10dp"
+                        android:padding="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Within you there is a stillness and a sanctuary to which you can retreat at any time and be yourself - Hermann Hesse"
+                        android:textSize="16sp"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"/>
+                    />
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+
+            </LinearLayout>
+        </ScrollView>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/section_3"
+        android:elevation="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginHorizontal="0dp"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:padding="20dp"
+        app:cardCornerRadius="0dp"
+        android:layout_alignParentBottom="true">
+
+        <LinearLayout
+            android:paddingVertical="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+
+            >
+
+
+            <ImageView
+                android:id="@+id/home_btn"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/home"
+                android:layout_weight="1"/>
+
+            <ImageView
+                android:id="@+id/meditation_btn"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                app:srcCompat="@drawable/meditation_2"
+                android:layout_weight="1"/>
+
+            <ImageView
+                android:id="@+id/notes_btn"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                app:srcCompat="@drawable/note_inactive"
+                android:layout_weight="1"/>
+
+            <ImageView
+                android:id="@+id/sleep_btn"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                app:srcCompat="@drawable/sleep_inactive"
+                android:layout_weight="1"/>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+
+
+</RelativeLayout>

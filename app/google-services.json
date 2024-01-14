@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "605648425690",
+    "project_id": "soul-sync-meditation",
+    "storage_bucket": "soul-sync-meditation.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:605648425690:android:f7c777413e4448912e0be3",
+        "android_client_info": {
+          "package_name": "com.shutter.soulsync"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCAoDXOhxI9dYOSb1ECdab4Qsmm1VrEQIs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

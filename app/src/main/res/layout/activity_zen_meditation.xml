@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ZenMeditationActivity"
+    android:background="#FF9B50"
+    android:paddingTop="10dp"
+    >
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/section_1"
+        android:layout_marginVertical="10dp"
+        android:layout_marginHorizontal="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        app:cardCornerRadius="12dp">
+
+        <RelativeLayout
+            android:background="#FFFFFF"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            >
+            <ImageView
+                android:id="@+id/headphone_logo"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/headphone_6"
+                android:layout_alignParentEnd="true"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="10dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Meditation Player"
+                android:textColor="#FE9A50"
+                android:layout_marginTop="14dp"
+                android:textStyle="bold"
+                android:layout_centerHorizontal="true"/>
+
+
+
+            <ImageView
+                android:id="@+id/back_btn"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/back_btn_1"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"/>
+
+            <TextView
+                android:layout_below="@+id/headphone_logo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:textAlignment="center"
+                android:fontFamily="@font/andika"
+                android:text="Boost your focus and productivity. Channel your energy with meditation designed to enhance mental clarity and efficiency"
+                android:textColor="#1D1B1B"
+                android:textSize="12sp" />
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/section_2"
+        android:layout_above="@id/section_3"
+        android:layout_marginVertical="10dp"
+        android:layout_marginHorizontal="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_below="@id/section_1"
+        android:padding="20dp"
+        app:cardCornerRadius="12dp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:weightSum="100"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:background="#F5F7F8"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="70">
+
+                <ImageView
+                    android:layout_width="250dp"
+                    android:layout_height="250dp"
+                    android:src="@drawable/zen_meditation_6"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="30"
+                android:background="#E8E6E5">
+                <com.example.jean.jcplayer.view.JcPlayerView
+                    android:id="@+id/jcplayer"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:seek_bar_color="#FF9B50"
+                    app:progress_color="#8BC34A"/>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/section_3"
+
+        android:layout_marginVertical="20dp"
+        android:layout_marginHorizontal="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        app:cardCornerRadius="12dp"
+        android:layout_alignParentBottom="true">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="180dp"
+            android:paddingVertical="0dp"
+            android:background="#F6AD77">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/nav_row_1"
+                android:paddingVertical="0dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+
+                >
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginHorizontal="40dp"
+                    android:layout_marginTop="48dp"
+                    app:cardCornerRadius="80dp"
+                    app:layout_constraintEnd_toStartOf="@+id/cardView"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+                                                            <ImageView
+                                                                android:id="@+id/mindfullness_meditation_btn"
+                                                                android:layout_width="50dp"
+                                                                android:layout_height="50dp"
+                                                                android:src="@drawable/mindfullness_meditation_2"
+                                                                android:padding="5dp"
+                                                                />
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginHorizontal="40dp"
+                    android:layout_marginBottom="16dp"
+                    app:cardCornerRadius="80dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.505"
+                    app:layout_constraintStart_toEndOf="@+id/cardView">
+                                                            <ImageView
+                                                                android:id="@+id/productivity_meditation_btn"
+                                                                android:layout_width="50dp"
+                                                                android:layout_height="50dp"
+                                                                app:srcCompat="@drawable/study_sounds_2"
+                                                                android:layout_weight="1"
+                                                                />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginHorizontal="40dp"
+                    android:layout_marginTop="48dp"
+                    app:cardCornerRadius="80dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.505"
+                    app:layout_constraintStart_toEndOf="@+id/cardView"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                                                            <ImageView
+                                                                android:id="@+id/transcedental_meditation_btn"
+                                                                android:layout_width="50dp"
+                                                                android:layout_height="50dp"
+                                                                app:srcCompat="@drawable/transcedental_meditation_2"
+                                                                android:layout_weight="1"
+                                                                android:padding="5dp"
+                                                                />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginHorizontal="40dp"
+                    android:layout_marginBottom="16dp"
+                    app:cardCornerRadius="80dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/cardView"
+                    app:layout_constraintStart_toStartOf="parent">
+                                                            <ImageView
+                                                                android:id="@+id/chakra_meditation_btn"
+                                                                android:layout_width="50dp"
+                                                                android:layout_height="50dp"
+                                                                android:src="@drawable/chakra_meditation_4"
+                                                                android:padding="5dp"
+                                                                />
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardView"
+                    android:layout_width="94dp"
+                    android:layout_height="94dp"
+                    android:layout_marginHorizontal="40dp"
+                    app:cardCornerRadius="80dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.498"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.674">
+
+                    <ImageView
+                                            android:id="@+id/breathing_meditation_btn"
+                                      android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                      android:layout_weight="1"
+                                   android:padding="8dp"
+                                        app:srcCompat="@drawable/breathing_meditation_2"
+                                        />
+
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:background="@drawable/corners"
+                    android:padding="8dp"
+                    android:text="Other Categories"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:textStyle="bold"/>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+
+
+</RelativeLayout>
